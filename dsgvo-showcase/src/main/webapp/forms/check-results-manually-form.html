@@ -1,0 +1,127 @@
+<form class="form-horizontal">
+    <h2>Validierung DSGVO Anfrage</h2>
+
+    <div id="requestee-details" class="control-group">
+        <h3>Daten zum Antragssteller</h3>
+
+        <h4>Anschrift</h4>
+        <span id="form-firstName"/>
+        <span id="form-lastName"/>
+        <br/>
+        <span id="form-street"/>
+        <br/>
+        <span id="form-zipCode"/>
+        <span id="form-city"/>
+
+        <h4>Kontakt</h4>
+        <label>Telefonnummer:</label>
+        <span id="form-phoneNumber"/>
+        <br/>
+        <label>E-Mail:</label>
+        <span id="form-eMail"/>
+
+        <h3>Anfrage</h3>
+        <span id="form-requestText"/>
+
+        <h3>Berichte</h3>
+        <h4>Buchhaltung</h4>
+        <ul id="form-accounting-data">
+        </ul>
+
+        <h4>HR</h4>
+        <ul id="form-hr-data">
+        </ul>
+
+        <h4>Vertrieb</h4>
+        <ul id="form-sales-data">
+        </ul>
+
+        <h3>Bestätigung</h3>
+        <label class="control-label">Report freigeben</label>
+        <div class="controls">
+            <input type="checkbox"
+                   cam-variable-name="approvalGiven"
+                   cam-variable-type="Boolean"
+                   class="form-control"/>
+        </div>
+
+    </div>
+    <script cam-script type="text/form-script">
+    var varsToLoad = ['firstName',
+                      'lastName',
+                      'street',
+                      'zipCode',
+                      'city',
+                      'phoneNumber',
+                      'eMail',
+                      'requestText'];
+
+    camForm.on('form-loaded', function() {
+      varsToLoad.forEach(variable => camForm.variableManager.fetchVariable(variable));
+      camForm.variableManager.fetchVariable('accountingData');
+      camForm.variableManager.fetchVariable('hrData');
+      camForm.variableManager.fetchVariable('salesData');
+     });
+
+    camForm.on('variables-fetched', function() {
+      varsToLoad.forEach(variable => {
+        var id = '#form-' + variable;
+        console.log("Trying to add a value to id: " + id);
+        $(id, camForm.formElement).text(camForm.variableManager.variableValue(variable))
+      });
+
+      var accountingData = camForm.variableManager.variableValue('accountingData');
+      if(undefined != accountingData) {
+          JSON.parse(accountingData).forEach(x => {
+            $('#form-accounting-data').append(
+                $('<li>').append(
+                    $('<span>').append(x)
+                )
+            );
+          });
+      } else {
+        $('#form-accounting-data').append(
+            $('<li>').append(
+                $('<span>').append('Nicht gefunden')
+            )
+        );
+      }
+
+      var salesData = camForm.variableManager.variableValue('salesData');
+      if(undefined != salesData) {
+          JSON.parse(salesData).forEach(x => {
+            $('#form-sales-data').append(
+                $('<li>').append(
+                    $('<span>').append(x)
+                )
+            );
+          });
+      } else {
+        $('#form-sales-data').append(
+            $('<li>').append(
+                $('<span>').append('Nicht gefunden')
+            )
+        );
+      }
+
+      var hrData = camForm.variableManager.variableValue('hrData');
+      if(undefined != hrData) {
+          JSON.parse(hrData).forEach(x => {
+            $('#form-hr-data').append(
+                $('<li>').append(
+                    $('<span>').append(x)
+                )
+            );
+          });
+      } else {
+        $('#form-hr-data').append(
+            $('<li>').append(
+                $('<span>').append('Nicht gefunden')
+            )
+        );
+      }
+
+    });
+
+    </script>
+</form>

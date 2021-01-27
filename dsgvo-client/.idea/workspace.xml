@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6cbb54f7-d345-4ea4-b74d-b147b15ab09a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/navbar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/navbar/NavBar.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>onCl</find>
+      <find>to</find>
+      <find>name</find>
+      <find>sone</find>
+      <find>this.getValueNullSafe</find>
+      <find>;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>href</replace>
+      <replace>getValueNullSafe</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1P6Z6kP2qzi7v7Ooaqv6g6Ax3CJ" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.catalog" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/running" />
+      <recent name="$PROJECT_DIR$/src/newrequest" />
+      <recent name="$PROJECT_DIR$/src/task" />
+      <recent name="$PROJECT_DIR$/src/home" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tasklist" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6cbb54f7-d345-4ea4-b74d-b147b15ab09a" name="Default Changelist" comment="" />
+      <created>1543260660638</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543260660638</updated>
+      <workItem from="1543260662415" duration="6807000" />
+      <workItem from="1543301426634" duration="2000" />
+      <workItem from="1543340602510" duration="120000" />
+      <workItem from="1543340838839" duration="14622000" />
+      <workItem from="1543384701300" duration="3962000" />
+      <workItem from="1543423988133" duration="13738000" />
+      <workItem from="1543569074702" duration="614000" />
+      <workItem from="1543752409847" duration="1501000" />
+      <workItem from="1543762485051" duration="8000" />
+      <workItem from="1543827934559" duration="64000" />
+      <workItem from="1543935271543" duration="305000" />
+      <workItem from="1562661308531" duration="435000" />
+      <workItem from="1562661945884" duration="12000" />
+      <workItem from="1565196336176" duration="1353000" />
+      <workItem from="1565245296956" duration="548000" />
+      <workItem from="1565246773428" duration="118000" />
+      <workItem from="1566561836903" duration="63000" />
+      <workItem from="1566561931963" duration="73000" />
+      <workItem from="1566569454182" duration="148000" />
+      <workItem from="1576762387206" duration="1404000" />
+      <workItem from="1576946457249" duration="4000" />
+      <workItem from="1578906203671" duration="832000" />
+      <workItem from="1611743242585" duration="416000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="341" y="175" key="SettingsEditor" timestamp="1578907693778">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1578907693778" />
+    <state width="960" height="620" key="SwitcherDM.inPresentationMode" timestamp="1576762953501">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state width="960" height="620" key="SwitcherDM.inPresentationMode/0.23.1920.1057@0.23.1920.1057" timestamp="1576762953501" />
+    <state x="217" y="234" key="new project wizard" timestamp="1578907130203">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="217" y="234" key="new project wizard/0.23.1680.1027@0.23.1680.1027" timestamp="1578907130203" />
+    <state x="169" y="23" width="1582" height="1057" key="search.everywhere.popup.inPresentationMode" timestamp="1576762972020">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="169" y="23" width="1582" height="1057" key="search.everywhere.popup.inPresentationMode/0.23.1920.1057@0.23.1920.1057" timestamp="1576762972020" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/navbar/NavBar.js</url>
+          <line>63</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

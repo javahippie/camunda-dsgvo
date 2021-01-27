@@ -1,0 +1,64 @@
+<form class="form-horizontal">
+    <h2>Validierung DSGVO Anfrage</h2>
+
+    <div id="requestee-details" class="control-group">
+        <h3>Daten zum Antragssteller</h3>
+
+        <h4>Anschrift</h4>
+        <span id="form-firstName"/>
+        <span id="form-lastName"/>
+        <br/>
+        <span id="form-street"/>
+        <br/>
+        <span id="form-zipCode"/>
+        <span id="form-city"/>
+
+        <h4>Kontakt</h4>
+        <label>Telefonnummre:</label>
+        <span id="form-phoneNumber"/>
+        <br/>
+        <label>E-Mail:</label>
+        <span id="form-eMail"/>
+
+        <h3>Anfrage</h3>
+        <span id="form-requestText"/>
+
+        <h4>Bestätigung</h4>
+        <label class="control-label">Anfrage ist gültig nach 15 DSGVO</label>
+        <div class="controls">
+            <input type="checkbox"
+                   cam-variable-name="isDsgvoRequest"
+                   cam-variable-type="Boolean"
+                   class="form-control"/>
+        </div>
+    </div>
+
+    <script cam-script type="text/form-script">
+    var varsToLoad = ['firstName',
+                      'lastName',
+                      'street',
+                      'zipCode',
+                      'city',
+                      'phoneNumber',
+                      'eMail',
+                      'requestText'];
+
+    camForm.on('form-loaded', function() {
+      varsToLoad.forEach(variable => camForm.variableManager.fetchVariable(variable))
+    });
+
+    camForm.on('variables-fetched', function() {
+      varsToLoad.forEach(variable => {
+        var id = '#form-' + variable;
+        console.log("Trying to add a value to id: " + id);
+        $(id, camForm.formElement).text(camForm.variableManager.variableValue(variable))
+      });
+    });
+
+
+
+
+
+
+    </script>
+</form>

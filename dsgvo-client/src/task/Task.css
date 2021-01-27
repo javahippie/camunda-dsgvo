@@ -1,0 +1,8 @@
+div.task-form {
+    padding: 1.3em;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0px;
+}

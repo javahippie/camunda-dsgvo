@@ -1,0 +1,113 @@
+<h2>Manuelle Erfassung einer Anfrage nach DSGVO</h2>
+
+<form class="form-horizontal">
+
+    <div id="requestee-details" class="control-group">
+        <h3>Details zum Antragsteller</h3>
+
+        <label class="control-label">Name</label>
+        <div class="controls">
+            <input type="text"
+                   cam-variable-name="lastName"
+                   cam-variable-type="String"
+                   required
+                   class="form-control"/>
+        </div>
+
+        <label class="control-label">Vorname</label>
+        <div class="controls">
+            <input type="text"
+                   cam-variable-name="firstName"
+                   cam-variable-type="String"
+                   required
+                   class="form-control"/>
+        </div>
+
+        <label class="control-label">Straße</label>
+        <div class="controls">
+            <input type="text"
+                   cam-variable-name="street"
+                   cam-variable-type="String"
+                   required
+                   class="form-control"/>
+        </div>
+
+        <label class="control-label">PLZ</label>
+        <div class="controls">
+            <input type="text"
+                   cam-variable-name="zipCode"
+                   cam-variable-type="String"
+                   required
+                   class="form-control"/>
+        </div>
+
+        <label class="control-label">Ort</label>
+        <div class="controls">
+            <input type="text"
+                   cam-variable-name="city"
+                   cam-variable-type="String"
+                   required
+                   class="form-control"/>
+        </div>
+
+        <label class="control-label">Telefon</label>
+        <div class="controls">
+            <input type="text"
+                   cam-variable-name="phoneNumber"
+                   cam-variable-type="String"
+                   required
+                   class="form-control"/>
+        </div>
+
+        <label class="control-label">E-Mail</label>
+        <div class="controls">
+            <input type="text"
+                   cam-variable-name="eMail"
+                   cam-variable-type="String"
+                   required
+                   class="form-control"/>
+        </div>
+    </div>
+
+    <div id="request-details" class="control-group">
+        <h3>Details der Anfrage</h3>
+
+        <label class="control-label">Anfragedatum</label>
+        <div class="controls">
+            <input type="text"
+                   cam-variable-name="startDate"
+                   cam-variable-type="Date"
+                   class="form-control"
+                   datepicker-popup="yyyy-MM-dd'T'HH:mm:ss"
+                   is-open="dateFieldOpened"/>
+
+            <span class="input-group-btn">
+    <button type="button"
+            class="btn btn-default"
+            ng-click="open($event)">
+      <i class="glyphicon glyphicon-calendar"></i>
+    </button>
+  </span>
+        </div>
+
+        <label class="control-label">Anfragetext</label>
+        <div class="controls">
+            <textarea
+                    rows="30"
+                    cam-variable-name="requestText"
+                    cam-variable-type="String"
+                    required
+                    class="form-control"/>
+        </div>
+
+    </div>
+    <script cam-script type="text/form-script">
+  $scope.open = function($event) {
+    $event.preventDefault();
+    $event.stopPropagation();
+
+    $scope.dateFieldOpened = true;
+  };
+
+    </script>
+</form>
